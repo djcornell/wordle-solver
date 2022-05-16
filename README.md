@@ -16,6 +16,7 @@ Search for words that start with s and end with t
 Search for words that start with s, end with t, do not use z, y and q and contains r somewhere
 > wordle-solver.exe -positions s___t -stop zyq -search r
 
+output
     search chars: [r]
     stop chars: [z y q]
     shirt
