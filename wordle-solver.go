@@ -24,7 +24,7 @@ func main() {
 	words := words()
 	search := strings.Split(*searchPtr, "")
 	stop := strings.Split(*stopPtr, "")
-	positions := strings.Split(*positionsPtr,"")
+	positions := strings.Split(*positionsPtr, "")
 	found := false
 	foundCount := 0
 
@@ -47,7 +47,6 @@ func main() {
 			continue
 		}
 
-
 		found = false
 		for _, stopChar := range stop {
 			if strings.Contains(value, stopChar) {
@@ -59,8 +58,8 @@ func main() {
 			continue
 		}
 
-    found = true
-    wordArray := strings.Split(value,"")
+		found = true
+		wordArray := strings.Split(value, "")
 		for i, positionsChar := range positions {
 			//fmt.Println(i,positionsChar,wordArray,value)
 			if wordArray[i] != positionsChar && positionsChar != "_" {
@@ -69,7 +68,7 @@ func main() {
 			}
 		}
 
-		if ! found {
+		if !found {
 			continue
 		}
 
